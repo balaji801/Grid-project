@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,700&family=Roboto&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+}
+.bg-1
+{
+    background: url(https://media.istockphoto.com/id/1413052093/photo/autumn-maple-tree-leaves-full-frame-colorful-fall-arrangement.jpg?s=1024x1024&w=is&k=20&c=PgEtjJ65E5UJIL_6Wi2mJthGLE2WCg2XOlpI-5LKcoQ=);
+    color: white;
+}
+.bg-2
+{
+    background: url(https://images.freeimages.com/images/large-previews/bb5/blue-hearts-1641616.jpg);
+    color: white;
+}
+body
+{
+    background-color: black;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+.container
+{
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+}
+h2
+{
+    font-size: 35px;
+    margin: 30px;
+    font-weight: 300px;
+}
+h2 span
+{
+    font-size: 20px;
+}
+p
+{
+    font-size: 15px;
+}
+.container > div
+{
+    background-color: lightblue;
+    height: 250px;
+    cursor: pointer;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-position: fixed;
+    transition: all 0.5 ease-in;
+}
+.container > div:hover
+{
+    opacity: 0.8;
+    transform: scale(0.98);
+}
+.container > div:nth-of-type(1)
+{
+    grid-column: 1/5;
+}
+
+
